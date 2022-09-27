@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="206dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:background="#00DFDEDE"
+        android:ems="10"
+        android:hint="@string/input_hint"
+        android:inputType="numberDecimal"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,UnknownId"
+        android:importantForAutofill="no">
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spinner_time_units"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/spinner_hint"
+        android:hint="@string/spinner_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:onClick="convert"
+        android:text="@string/convertValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText1" />
+
+    <TextView
+        android:id="@+id/resSecs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/sec"
+        app:layout_constraintTop_toBottomOf="@+id/convertButton"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/resMins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/min"
+        app:layout_constraintTop_toTopOf="@+id/resSecs"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="58dp" />
+
+    <TextView
+        android:id="@+id/resHrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="@string/hr"
+        app:layout_constraintTop_toTopOf="@+id/resMins"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="153dp" />
+
+    <TextView
+        android:id="@+id/resDys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/dy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/resHrs"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/resYrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="@string/yr"
+        app:layout_constraintTop_toBottomOf="@+id/resDys"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="22dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

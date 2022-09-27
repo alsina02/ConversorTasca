@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Conversor De Temps</string>
+    <string name="input_hint">Valor</string>
+    <string name="spinner_hint">Unitat</string>
+    <string-array name="units">
+        <item>Segons</item>
+        <item>Minuts</item>
+        <item>Hores</item>
+        <item>Dies</item>
+        <item>Anys</item>
+    </string-array>
+    <string name="convertValue">Convertir</string>
+    <string name="sec">Segons</string>
+    <string name="min">Minuts</string>
+    <string name="hr">Hores</string>
+    <string name="dy">Dies</string>
+    <string name="yr">Anys</string>
+</resources>

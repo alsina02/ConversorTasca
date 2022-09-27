@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Conversor De Tiempo</string>
+    <string name="input_hint">Valor</string>
+    <string name="spinner_hint">Unidad</string>
+    <string-array name="units">
+        <item>Segundos</item>
+        <item>Minutos</item>
+        <item>Horas</item>
+        <item>Dias</item>
+        <item>Años</item>
+    </string-array>
+    <string name="convertValue">Convertir</string>
+    <string name="sec">Segundos</string>
+    <string name="min">Minutos</string>
+    <string name="hr">Horas</string>
+    <string name="dy">Dias</string>
+    <string name="yr">Años</string>
+</resources>
