@@ -22,13 +22,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         input = (EditText) findViewById(R.id.editText1);
 
-
         // On spinner, we create an spinner related to the spinner's id
         Spinner spin = (Spinner) findViewById(R.id.spinner_time_units);
 
         //Creating the ArrayAdapter with Char Sequence, related to the string array created on String.xml
         ArrayAdapter<CharSequence> unitats = ArrayAdapter.createFromResource(this, R.array.units, android.R.layout.simple_spinner_item);
         unitats.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
         //Setting the ArrayAdapter data on the Spinner
         spin.setAdapter(unitats);
         spin.setOnItemSelectedListener(this);
