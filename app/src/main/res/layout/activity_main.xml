@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
     tools:context=".MainActivity">
 
     <EditText
@@ -33,10 +34,14 @@
         android:layout_height="48dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="28dp"
+        android:backgroundTint="@color/background_light"
         android:contentDescription="@string/spinner_hint"
         android:hint="@string/spinner_hint"
+        android:popupBackground="@android:drawable/arrow_down_float"
+        android:padding="@android:dimen/system_app_widget_background_radius"
         app:layout_constraintStart_toEndOf="@+id/editText1"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NewApi" />
 
     <Button
         android:id="@+id/convertButton"
@@ -46,65 +51,78 @@
         android:layout_marginTop="68dp"
         android:onClick="convert"
         android:text="@string/convertValue"
+        android:textColor="?attr/textAppearanceHeadline1"
+        app:backgroundTint="?attr/colorButtonNormal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editText1" />
 
     <TextView
         android:id="@+id/resSecs"
         android:layout_width="170dp"
-        android:layout_height="25dp"
+        android:layout_height="30dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
+        android:padding="@android:dimen/system_app_widget_background_radius"
         android:text="@string/sec"
+        android:textColor="?attr/textAppearanceHeadline1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/convertButton"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:targetApi="s" />
 
     <TextView
         android:id="@+id/resMins"
         android:layout_width="170dp"
-        android:layout_height="25dp"
+        android:layout_height="30dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
+        android:padding="@android:dimen/system_app_widget_background_radius"
         android:text="@string/min"
+        android:textColor="?attr/textAppearanceHeadline1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toEndOf="@+id/resSecs"
         app:layout_constraintTop_toBottomOf="@+id/convertButton"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,NewApi" />
 
     <TextView
         android:id="@+id/resHrs"
         android:layout_width="170dp"
-        android:layout_height="25dp"
+        android:layout_height="30dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
+        android:padding="@android:dimen/system_app_widget_background_radius"
         android:text="@string/hr"
+        android:textColor="?attr/textAppearanceHeadline1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resSecs"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,NewApi" />
 
     <TextView
         android:id="@+id/resDys"
         android:layout_width="170dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:padding="@android:dimen/system_app_widget_background_radius"
         android:text="@string/dy"
+        android:textColor="?attr/textAppearanceHeadline1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/resHrs"
         app:layout_constraintTop_toBottomOf="@+id/resMins"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,NewApi" />
 
     <TextView
         android:id="@+id/resYrs"
         android:layout_width="170dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:padding="@android:dimen/system_app_widget_background_radius"
         android:text="@string/yr"
+        android:textColor="?attr/textAppearanceHeadline1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/resHrs"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,NewApi" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
